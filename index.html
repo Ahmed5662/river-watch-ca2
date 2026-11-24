@@ -205,6 +205,8 @@
     }
   
 .river-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0 0}.river-scene{margin:0;min-width:0;position:relative;overflow:hidden;border-radius:16px;border:1px solid #ffffff38;background:linear-gradient(155deg,#3b8192,#184a65);height:155px}.river-scene svg,.river-scene img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.river-scene figcaption{position:absolute;bottom:0;left:0;right:0;padding:24px 12px 9px;background:linear-gradient(transparent,#052333ee);color:white;font-size:13px;font-weight:700}.river-scene a{color:#d5edf6;font-size:10px;font-weight:400;display:block}.gallery-note{font-size:11px;color:#c5e2eb;margin-top:5px!important}.river-scene .fallback-label{position:absolute;top:8px;left:8px;background:#06283aaa;color:white;padding:3px 6px;border-radius:5px;font-size:10px}@media(max-width:650px){.river-gallery{grid-template-columns:1fr 1fr}.river-scene{height:125px}.river-scene:last-child{grid-column:1/-1}}
+
+.hero{background:linear-gradient(90deg,rgba(4,29,43,.94),rgba(4,29,43,.56)),url('https://upload.wikimedia.org/wikipedia/commons/7/7b/River_Shannon_at_Athlone_-_geograph.org.uk_-_5989167.jpg') center 52%/cover; border-radius:0;} .hero-inner{padding:20px 18px 16px} .hero-grid{display:block;margin-top:10px} .hero h1{font-size:clamp(32px,4vw,48px)} .hero-note{display:inline-block;margin-top:10px;padding:7px 10px;font-size:13px} .hero-credit{font-size:11px;color:#e0f2fa;margin-top:8px} .hero-credit a{color:white} .wave{display:none} .nav{position:sticky;top:0;z-index:10;background:#0b3044;box-shadow:0 3px 12px #0002} .nav-inner{max-width:1320px;margin:auto;display:flex;align-items:center;gap:20px;padding:12px 18px;overflow:auto;white-space:nowrap} .nav a{color:#e4f4fa;text-decoration:none;font-weight:650;font-size:14px} .nav a:hover{text-decoration:underline} .nav .brand{font-size:18px;margin-right:8px;color:white} section[id]{scroll-margin-top:70px} #overview{margin-top:16px} .panel{margin-bottom:16px} .filters{display:flex;align-items:end;gap:12px;flex-wrap:wrap;margin:0 0 16px} .filters label{font-size:12px;font-weight:700;color:var(--muted);min-width:160px} .filters input,.filters select{display:block;margin-top:4px} .town-card[hidden]{display:none} .eventbar{height:6px;background:#dceaf0;border-radius:6px;margin-top:4px;min-width:50px} .eventbar i{display:block;height:100%;background:#168a9b;border-radius:6px} .metric:nth-child(2) b{color:#176647} .metric:nth-child(3) b{color:#835b00} .metric:nth-child(4) b{color:#94312a}
 </style>
 </head>
 <body>
@@ -215,26 +217,25 @@
         <span>Flood Intelligence & Response Centre</span>
         <span>Irish towns · live decision support</span>
       </div>
-      <div class="hero-grid">
-        <div>
-          <h1>River-led decisions for eight Irish towns.</h1>
-          <p>Operational dashboard for the Duty Officer: live three-day river flow peaks, town-level flood actions, crew deployment and evidence for the Area Manager’s flood-defence study question.</p>
-          <div class="hero-note">AI can make mistakes. A person makes the final decision. This tool supports tonight’s operational judgement; it does not predict flooding for individual properties.</div>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat"><span class="big">8 towns</span><small>Clonmel · Fermoy · Mallow · Bandon · Enniscorthy · Ennis · Athlone · Carrick-on-Shannon</small></div>
-          <div class="hero-stat"><span class="big">3 mobile crews</span><small>Clonmel, Mallow and Athlone bases with a maximum of two barrier deployments per crew</small></div>
-          <div class="hero-stat"><span class="big">10-year history</span><small>P95 and P99 thresholds calculated from 1 Jan 2016 to 31 Dec 2025 and stored locally</small></div>
-          <div class="hero-stat"><span class="big">Live evidence</span><small>Google Sheet resources, Open-Meteo flood forecasts and Met Éireann warning data</small></div>
-        </div>
-      </div>
-      <div class="river-gallery"><figure class="river-scene"><svg viewBox="0 0 400 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="160" fill="#a8d5dc"/><path d="M0 74Q50 20 120 67T250 48T400 72V160H0Z" fill="#729b91"/><path d="M0 94Q100 60 190 92T400 75V160H0Z" fill="#486e65"/><path d="M0 115Q130 90 400 114V160H0Z" fill="#4d96aa"/><g fill="#e9d9bd" stroke="#52717a" stroke-width="1"><path d="M22 86V65L39 50L56 65V86Z"/><path d="M59 86V58L76 44L93 58V86Z"/><path d="M96 86V68L114 53L132 68V86Z"/><path d="M282 83V49L303 35L324 49V83Z"/><path d="M327 84V61L345 46L363 61V84Z"/></g><path d="M120 103H284V114H120Z" fill="#c5bba2"/><path d="M120 116V140M174 116V140M229 116V140M284 116V140" stroke="#b9ae99" stroke-width="12"/><g stroke="#b2dce4" opacity=".7" fill="none"><path d="M0 143Q100 137 200 143T400 142"/><path d="M10 153Q120 147 230 153T390 153"/></g></svg><span class="fallback-label">Illustrative river scene</span><img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/River_Suir_at_Clonmel_-_geograph.org.uk_-_216250.jpg" alt="Clonmel · River Suir" loading="lazy" onerror="this.remove()"><figcaption>Clonmel · River Suir<a href="https://commons.wikimedia.org/wiki/File:River_Suir_at_Clonmel_-_geograph.org.uk_-_216250.jpg" target="_blank" rel="noopener">Photo: Clive Barry · CC BY-SA 2.0 · source</a></figcaption></figure><figure class="river-scene"><svg viewBox="0 0 400 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="160" fill="#a8d5dc"/><path d="M0 74Q50 20 120 67T250 48T400 72V160H0Z" fill="#729b91"/><path d="M0 94Q100 60 190 92T400 75V160H0Z" fill="#486e65"/><path d="M0 115Q130 90 400 114V160H0Z" fill="#4d96aa"/><g fill="#e9d9bd" stroke="#52717a" stroke-width="1"><path d="M22 86V65L39 50L56 65V86Z"/><path d="M59 86V58L76 44L93 58V86Z"/><path d="M96 86V68L114 53L132 68V86Z"/><path d="M282 83V49L303 35L324 49V83Z"/><path d="M327 84V61L345 46L363 61V84Z"/></g><path d="M120 103H284V114H120Z" fill="#c5bba2"/><path d="M120 116V140M174 116V140M229 116V140M284 116V140" stroke="#b9ae99" stroke-width="12"/><g stroke="#b2dce4" opacity=".7" fill="none"><path d="M0 143Q100 137 200 143T400 142"/><path d="M10 153Q120 147 230 153T390 153"/></g></svg><span class="fallback-label">Illustrative river scene</span><img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Clonmel_-_R_Suir%2C_Old_Bridge_%5E_weir_-_geograph.org.uk_-_6008162.jpg" alt="Clonmel · Old Bridge and weir" loading="lazy" onerror="this.remove()"><figcaption>Clonmel · Old Bridge and weir<a href="https://commons.wikimedia.org/wiki/File:Clonmel_-_R_Suir%2C_Old_Bridge_%5E_weir_-_geograph.org.uk_-_6008162.jpg" target="_blank" rel="noopener">Photo: Colin Park · CC BY-SA 2.0 · source</a></figcaption></figure><figure class="river-scene"><svg viewBox="0 0 400 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="160" fill="#a8d5dc"/><path d="M0 74Q50 20 120 67T250 48T400 72V160H0Z" fill="#729b91"/><path d="M0 94Q100 60 190 92T400 75V160H0Z" fill="#486e65"/><path d="M0 115Q130 90 400 114V160H0Z" fill="#4d96aa"/><g fill="#e9d9bd" stroke="#52717a" stroke-width="1"><path d="M22 86V65L39 50L56 65V86Z"/><path d="M59 86V58L76 44L93 58V86Z"/><path d="M96 86V68L114 53L132 68V86Z"/><path d="M282 83V49L303 35L324 49V83Z"/><path d="M327 84V61L345 46L363 61V84Z"/></g><path d="M120 103H284V114H120Z" fill="#c5bba2"/><path d="M120 116V140M174 116V140M229 116V140M284 116V140" stroke="#b9ae99" stroke-width="12"/><g stroke="#b2dce4" opacity=".7" fill="none"><path d="M0 143Q100 137 200 143T400 142"/><path d="M10 153Q120 147 230 153T390 153"/></g></svg><span class="fallback-label">Illustrative river scene</span><img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/River_Shannon_at_Athlone_-_geograph.org.uk_-_5989167.jpg" alt="Athlone · River Shannon" loading="lazy" onerror="this.remove()"><figcaption>Athlone · River Shannon<a href="https://commons.wikimedia.org/wiki/File:River_Shannon_at_Athlone_-_geograph.org.uk_-_5989167.jpg" target="_blank" rel="noopener">Photo: Oliver Dixon · CC BY-SA 2.0 · source</a></figcaption></figure></div><p class="gallery-note">Reference photography (not live flood imagery). Illustrated fallback if photos are unavailable.</p>
+      <div class="hero-grid"><div><h1>River Watch</h1><p>Flood intelligence &amp; response centre · Eight Irish towns</p><p class="hero-note">Decision by 16:00 · Barriers before 18:00 · Human approval required. Not a property-level flood prediction.</p></div></div>
+      <div class="hero-credit">Reference photograph: Athlone · River Shannon<a href="https://commons.wikimedia.org/wiki/File:River_Shannon_at_Athlone_-_geograph.org.uk_-_5989167.jpg" target="_blank" rel="noopener">Photo: Oliver Dixon · CC BY-SA 2.0 · source</a> · Not live flood imagery.</div>
     </div>
     <div class="wave"></div>
   </header>
 
+  <nav class="nav"><div class="nav-inner"><a class="brand" href="#overview">≋ River Watch</a><a href="#overview">Overview</a><a href="#town-intel">Towns</a><a href="#field-ops">Crews</a><a href="#ai-panel">Ask AI</a><a href="#study">History</a><a href="#evidence">Sources</a></div></nav>
   <div class="page">
-    <section class="panel toolbar">
+    <section class="panel" id="overview">
+      <div class="section-title">
+        <div>
+          <div class="kicker">Snapshot</div>
+          <h2>Risk summary</h2>
+          <p>Counts update automatically after each refresh.</p>
+        </div>
+      </div>
+      <div class="metrics" id="metrics"></div>
+    </section>
+    <section class="panel toolbar" id="rules">
       <div>
         <div class="kicker">Operations</div>
         <h2>Tonight’s flood readiness</h2>
@@ -263,18 +264,9 @@
       </div>
     </section>
 
-    <section class="panel">
-      <div class="section-title">
-        <div>
-          <div class="kicker">Snapshot</div>
-          <h2>Risk summary</h2>
-          <p>Counts update automatically after each refresh.</p>
-        </div>
-      </div>
-      <div class="metrics" id="metrics"></div>
-    </section>
 
-    <section class="panel">
+
+    <section class="panel" id="town-intel">
       <div class="section-title">
         <div>
           <div class="kicker">Town intelligence</div>
@@ -282,10 +274,10 @@
           <p>Each card shows live forecast values, thresholds, warning effects, operational notes and whether the recommendation uses a rehearsal override.</p>
         </div>
       </div>
-      <div class="grid-town" id="towns"></div>
+      <div class="filters"><label>Town or river <input type="text" id="townfilter" placeholder="Search Clonmel, Shannon…"></label><label>Risk level <select id="riskfilter"><option value="all">All levels</option><option>Normal</option><option>Standby</option><option>Barriers</option></select></label><button class="btn alt" id="clearfilter">Clear filters</button><span class="subtle" id="filtercount"></span></div><div class="grid-town" id="towns"></div>
     </section>
 
-    <section class="panel">
+    <section class="panel" id="field-ops">
       <div class="section-title">
         <div>
           <div class="kicker">Field operations</div>
@@ -296,7 +288,7 @@
       <div class="crew-grid" id="crews"></div>
     </section>
 
-    <section class="panel qa-grid">
+    <section class="panel qa-grid" id="ai-panel">
       <div>
         <div class="kicker">Decision support</div>
         <h2>Ask River Watch AI</h2>
@@ -331,7 +323,7 @@
       </div>
     </section>
 
-    <section class="panel history-top">
+    <section class="panel history-top" id="study">
       <div>
         <div class="kicker">Area Manager evidence</div>
         <h2>Flood-defence study priority</h2>
@@ -357,7 +349,7 @@
       </div>
     </section>
 
-    <section class="panel">
+    <section class="panel" id="evidence">
       <div class="section-title">
         <div>
           <div class="kicker">Data and credibility</div>
@@ -536,7 +528,7 @@
       const barrierAction = r.crew ? ` Crew ${esc(r.crew)} assigned to erect barriers before 18:00.` : '';
       const overrideText = r.override!==null ? ` Rehearsal flow override used in place of the live peak (${fmt(r.live)} m³/s).` : '';
       return `
-        <article class="town-card">
+        <article class="town-card" data-town="${esc(r.town+' '+r.river+' '+r.county)}" data-risk="${names[r.level]}">
           <div class="town-head">
             <div>
               <h3>${esc(r.town)}</h3>
@@ -575,6 +567,7 @@
         </article>`;
     }).join('');
 
+    applyFilters();
     $('crews').innerHTML=Object.entries(p.crews).map(([c,ts])=>{
       const used=ts.length;
       const width=Math.max(used*50,6);
@@ -603,7 +596,7 @@
         <table>
           <thead><tr><th>Town</th><th>Total events</th><th>First four winters</th><th>Last four winters</th></tr></thead>
           <tbody>
-            ${p.ranking.map(x=>`<tr><td>${esc(x.town)}</td><td>${x.total_events}</td><td>${x.first_four}</td><td>${x.last_four}</td></tr>`).join('')}
+            ${p.ranking.map(x=>`<tr><td>${esc(x.town)}</td><td>${x.total_events}<div class="eventbar"><i style="width:${100*x.total_events/Math.max(1,top.total_events)}%"></i></div></td><td>${x.first_four}</td><td>${x.last_four}</td></tr>`).join('')}
           </tbody>
         </table>
       </div>`;
@@ -753,6 +746,8 @@
     $('keymsg').textContent='Key forgotten.';
   };
 
+  function applyFilters(){const q=$('townfilter').value.trim().toLowerCase(), risk=$('riskfilter').value;let count=0;const cards=[...document.querySelectorAll('.town-card')];for(const c of cards){c.hidden=!(c.dataset.town.toLowerCase().includes(q)&&(risk==='all'||c.dataset.risk===risk));if(!c.hidden)count++} $('filtercount').textContent=`Showing ${count} of ${cards.length} towns · display only`;}
+  $('townfilter').oninput=applyFilters;$('riskfilter').onchange=applyFilters;$('clearfilter').onclick=()=>{$('townfilter').value='';$('riskfilter').value='all';applyFilters()};
   run(false);
   </script>
 </body>
