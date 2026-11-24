@@ -312,7 +312,7 @@
           </label>
           <label>
             <div class="subtle" style="margin-bottom:6px">Model ID</div>
-            <input id="model" value="llama-3.1-8b-instant" aria-label="Model ID">
+            <input id="model" value="openai/gpt-oss-20b" aria-label="Model ID">
           </label>
           <div class="controls">
             <button class="btn" id="save">Save key</button>
@@ -671,7 +671,7 @@
         body:JSON.stringify({
           model:$('model').value.trim(),
           temperature:0,
-          max_tokens:1000,
+          max_completion_tokens:2048, reasoning_effort:'low',
           messages:[
             {
               role:'system',
